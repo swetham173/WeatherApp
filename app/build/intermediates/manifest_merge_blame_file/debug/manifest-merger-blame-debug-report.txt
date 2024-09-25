@@ -1,0 +1,91 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.weatherapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml
+10
+11    <!-- To access the Internet -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:8:5-76
+14-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:8:22-73
+15
+16    <!-- To access the location -->
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:11:5-79
+17-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:12:5-81
+18-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:12:22-78
+19
+20    <application
+20-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:14:5-32:19
+21        android:allowBackup="true"
+21-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:15:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.2.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/6c0044a99f91be826ffee75cdd447424/core-1.2.0/AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:icon="@mipmap/ic_launcher"
+25-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:16:9-43
+26        android:label="@string/app_name"
+26-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:17:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:18:9-54
+28        android:supportsRtl="true"
+28-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:19:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme" >
+30-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:20:9-40
+31        <activity
+31-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:22:9-30:20
+32            android:name="com.weatherapp.activities.MainActivity"
+32-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:23:13-52
+33            android:screenOrientation="portrait" >
+33-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:24:13-49
+34            <intent-filter>
+34-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:25:13-29:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:26:17-69
+35-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:26:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:28:17-77
+37-->/Users/nilavan/Downloads/WeatherApp/app/src/main/AndroidManifest.xml:28:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->[com.karumi:dexter:6.0.1] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/e807e5b0707e0b889f240d287491c121/jetified-dexter-6.0.1/AndroidManifest.xml:27:9-29:72
+41            android:name="com.karumi.dexter.DexterActivity"
+41-->[com.karumi:dexter:6.0.1] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/e807e5b0707e0b889f240d287491c121/jetified-dexter-6.0.1/AndroidManifest.xml:28:13-60
+42            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+42-->[com.karumi:dexter:6.0.1] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/e807e5b0707e0b889f240d287491c121/jetified-dexter-6.0.1/AndroidManifest.xml:29:13-69
+43        <activity
+43-->[com.google.android.gms:play-services-base:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/6d8b2bae5849f16ef4cabde6b8ec9476/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+44            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+44-->[com.google.android.gms:play-services-base:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/6d8b2bae5849f16ef4cabde6b8ec9476/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+45            android:exported="false"
+45-->[com.google.android.gms:play-services-base:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/6d8b2bae5849f16ef4cabde6b8ec9476/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+46            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+46-->[com.google.android.gms:play-services-base:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/6d8b2bae5849f16ef4cabde6b8ec9476/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+47
+48        <meta-data
+48-->[com.google.android.gms:play-services-basement:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/bc13f0acd75a988cccadd5bbe939939f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+49            android:name="com.google.android.gms.version"
+49-->[com.google.android.gms:play-services-basement:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/bc13f0acd75a988cccadd5bbe939939f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+50            android:value="@integer/google_play_services_version" />
+50-->[com.google.android.gms:play-services-basement:17.0.0] /Users/nilavan/.gradle/caches/transforms-2/files-2.1/bc13f0acd75a988cccadd5bbe939939f/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+51    </application>
+52
+53</manifest>
